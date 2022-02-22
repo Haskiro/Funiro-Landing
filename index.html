@@ -12,11 +12,14 @@
         <div class="container">
             <div class="header__body">
                 <nav class="header__nav">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
                     <a href="#" class="header__logo logo">
                         <img class="logo__image" src="/images/header/logo/logo.svg" alt="logo">
                     </a>
                     <ul class="header__list list-header">
-                        <li class="list-header__item">
+                        <li class="list-header__item list-header__item_dropdown">
                             <a href="#" class="list-header__link list-header__link_dropdown-list">Products</a>
                             <ul class="dropdown-list">
                                 <li class="dropdown-list__item">
@@ -33,7 +36,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="list-header__item">
+                        <li class="list-header__item list-header__item_dropdown">
                             <a href="#" class="list-header__link list-header__link_dropdown-list">
                                 Rooms
                             </a>
@@ -105,81 +108,78 @@
                                 </svg>    
                             </button>
                         </div>
-                        <div class="main-slider__points">
-                            <div class="main-slider__point">
-                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle opacity="0.7" cx="13.5" cy="13.5" r="13" stroke="#E89F71"/>
-                                    <circle cx="13.5" cy="13.5" r="5" fill="#E89F71" stroke="#E89F71"/>
-                                </svg>
-                            </div>
-                            <div class="main-slider__point">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#D8D8D8"/>
-                                </svg>
-                            </div>
-                            <div class="main-slider__point">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#D8D8D8"/>
-                                </svg>
-                            </div>
-                            <div class="main-slider__point">
-                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="5.5" cy="5.5" r="5.5" fill="#D8D8D8"/>
-                                </svg>
-                            </div>
-                        </div>
+                        <div class="swiper-pagination main-slider__points"></div>
                     </div>
                 </div>
-                <div class="main-slider__slider slider">
-                    <div class="slider__slide">
-                        <img src="/images/main-slider/slider/slides/1.jpeg" alt="Bohauss" class="slider__image">
-                        <div class="slider__slide-description slide-description">
-                            <a  href="#" class="slide-description__link">
-                                <p class="slide-description__title">
-                                    Bohauss
-                                </p>
-                                <p class="slide-description__text">
-                                    Luxury big sofa 2-seat
-                                </p>
-                                <p class="slide-description__price">
-                                    Rp 17.000.000
-                                    <img  class="slide-description__arrow" src="/images/main-slider/slider/slide-description/arrow-right.svg" alt="arrow-right">
-                                </p>
-                            </a>
+                <div class="swiper">
+                    <div class="main-slider__slider slider swiper-wrapper">
+                        <div class="slider__slide swiper-slide">
+                            <img src="/images/main-slider/slider/slides/1.jpeg" alt="Bohauss" class="slider__image">
+                            <div class="slider__slide-description slide-description" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="800">
+                                <a  href="#" class="slide-description__link">
+                                    <p class="slide-description__title">
+                                        Bohauss
+                                    </p>
+                                    <p class="slide-description__text">
+                                        Luxury big sofa 2-seat
+                                    </p>
+                                    <p class="slide-description__price">
+                                        Rp 17.000.000
+                                        <img  class="slide-description__arrow" src="/images/main-slider/slider/slide-description/arrow-right.svg" alt="arrow-right">
+                                    </p>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slider__slide">
-                        <img src="/images/main-slider/slider/slides/2.jpg" alt="Bohauss" class="slider__image">
-                        <div class="slider__slide-description slide-description">
-                            <a  href="#" class="slide-description__link">
-                                <p class="slide-description__title">
-                                    Bohauss
-                                </p>
-                                <p class="slide-description__text">
-                                    Luxury big sofa 2-seat
-                                </p>
-                                <p class="slide-description__price">
-                                    Rp 17.000.000
-                                    <img  class="slide-description__arrow" src="/images/main-slider/slider/slide-description/arrow-right.svg" alt="arrow-right">
-                                </p>
-                            </a>
+                        <div class="slider__slide swiper-slide">
+                            <img src="/images/main-slider/slider/slides/2.jpg" alt="Bohauss" class="slider__image">
+                            <div class="slider__slide-description slide-description" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="800">
+                                <a  href="#" class="slide-description__link">
+                                    <p class="slide-description__title">
+                                        Bohauss
+                                    </p>
+                                    <p class="slide-description__text">
+                                        Luxury big sofa 2-seat
+                                    </p>
+                                    <p class="slide-description__price">
+                                        Rp 17.000.000
+                                        <img  class="slide-description__arrow" src="/images/main-slider/slider/slide-description/arrow-right.svg" alt="arrow-right">
+                                    </p>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slider__slide">
-                        <img src="/images/main-slider/slider/slides/3.jpeg" alt="Bohauss" class="slider__image">
-                        <div class="slider__slide-description slide-description">
-                            <a  href="#" class="slide-description__link">
-                                <p class="slide-description__title">
-                                    Bohauss
-                                </p>
-                                <p class="slide-description__text">
-                                    Luxury big sofa 2-seat
-                                </p>
-                                <p class="slide-description__price">
-                                    Rp 17.000.000
-                                    <img  class="slide-description__arrow" src="/images/main-slider/slider/slide-description/arrow-right.svg" alt="arrow-right">
-                                </p>
-                            </a>
+                        <div class="slider__slide swiper-slide">
+                            <img src="/images/main-slider/slider/slides/3.jpeg" alt="Bohauss" class="slider__image">
+                            <div class="slider__slide-description slide-description" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="800">
+                                <a  href="#" class="slide-description__link">
+                                    <p class="slide-description__title">
+                                        Bohauss
+                                    </p>
+                                    <p class="slide-description__text">
+                                        Luxury big sofa 2-seat
+                                    </p>
+                                    <p class="slide-description__price">
+                                        Rp 17.000.000
+                                        <img  class="slide-description__arrow" src="/images/main-slider/slider/slide-description/arrow-right.svg" alt="arrow-right">
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider__slide swiper-slide">
+                            <img src="/images/main-slider/slider/slides/2.jpg" alt="Bohauss" class="slider__image">
+                            <div class="slider__slide-description slide-description" data-swiper-parallax-x="-100%" data-swiper-parallax-duration="800">
+                                <a  href="#" class="slide-description__link">
+                                    <p class="slide-description__title">
+                                        Bohauss
+                                    </p>
+                                    <p class="slide-description__text">
+                                        Luxury big sofa 2-seat
+                                    </p>
+                                    <p class="slide-description__price">
+                                        Rp 17.000.000
+                                        <img  class="slide-description__arrow" src="/images/main-slider/slider/slide-description/arrow-right.svg" alt="arrow-right">
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -247,8 +247,9 @@
         </div>
     </main>
     <footer>
-
     </footer>
+    <link rel="stylesheet" href="/js/libs/swiper/swiper-bundle.min.css"/> 
+    <script src="/js/libs/swiper/swiper-bundle.min.js"></script>
     <script src="/js/scripts.js"></script>
 </body>
 </html>
