@@ -45,6 +45,9 @@ burger.addEventListener("click", function() {
     headerList.classList.toggle("active");
     body.classList.toggle("lock");
     nav.classList.toggle("active");
+    for (let i = 0; i < spoiler.length; i++) {
+        dropDownList[i].classList.remove("active");
+    }
 })
 
 let burgerMobile = document.querySelector(".header-mobile__burger");
@@ -53,4 +56,7 @@ let headerBody = document.querySelector(".header__body");
 burgerMobile.addEventListener("click", function() {
     headerBody.classList.toggle("active");
     burgerMobile.classList.toggle("active");
+    for (let i = 0; i < spoiler.length; i++) {
+        dropDownList[i].classList.remove("active");
+    }
 })
