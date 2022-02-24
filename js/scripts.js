@@ -25,22 +25,32 @@ new Swiper(".swiper", {
 },);
 
 // спойлеры
-let spoiler = document.querySelectorAll(".list-header__item_dropdown");
 let dropDownList = document.querySelectorAll(".dropdown-list");
+let spoiler = document.querySelectorAll(".list-header__arrow-down");
 
 for (let i = 0; i < spoiler.length; i++) {
     spoiler[i].addEventListener("click", function() {
         dropDownList[i].classList.toggle("active");
-    })
+    });
 }
 
 // бургер
 let burger = document.querySelector(".header__burger");
-let headerList = document.querySelector(".list-header");
+let headerList = document.querySelector(".header__list");
 let body = document.querySelector("body");
+let nav = document. querySelector(".header__nav");
 
 burger.addEventListener("click", function() {
     burger.classList.toggle("active");
     headerList.classList.toggle("active");
     body.classList.toggle("lock");
+    nav.classList.toggle("active");
+})
+
+let burgerMobile = document.querySelector(".header-mobile__burger");
+let headerBody = document.querySelector(".header__body");
+
+burgerMobile.addEventListener("click", function() {
+    headerBody.classList.toggle("active");
+    burgerMobile.classList.toggle("active");
 })
